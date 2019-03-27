@@ -59,8 +59,6 @@ if ( ! class_exists( 'Like_it' ) ) :
                 
                 wp_enqueue_style( 'likeicon', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
-                wp_enqueue_style( 'like-it.css', $plugins_url . '/templates/like-it.css' );
-
                 wp_register_script('like-admin', $plugins_url . '/templates/like-admin.js', array('jquery'));
                 wp_enqueue_script('like-admin');
 
@@ -78,6 +76,9 @@ if ( ! class_exists( 'Like_it' ) ) :
                 wp_register_script('like', $plugins_url . 'templates/like.js', array('jquery'));
                 
                 wp_enqueue_script('like');
+                
+                wp_enqueue_style( 'like-it.css', $plugins_url . '/templates/like-it.css' );
+                
 
                 wp_localize_script('like', 'like_it', array(
                         'url'   => admin_url('admin-ajax.php'),
