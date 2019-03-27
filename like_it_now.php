@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Like It Now
-Plugin URI: https://github.com/xmn
+Plugin URI: https://github.com/cemre1234/like_it_now/
 Description: A simple wordpress like/dislike plugin
 Version: 1.0
 Author: Cemre Tellioğlu
